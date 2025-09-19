@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitalk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="chat-container">
+        <header>
+            <div class="header-content">
+                <h1>Transitalk</h1>
+                <p>"Talk to Hyderabad — culture, travel, and environment in your own tongue."</p>
+                <button id="lang-toggle-btn" class="lang-toggle">Switch Language</button>
+            </div>
+            <div class="language-badge" id="lang-badge">te</div>
+        </header>
+
+        <main class="message-list" id="message-list">
+            </main>
+
+        <footer>
+            <div class="quick-actions">
+                <button class="quick-btn" data-query="Tell me about Charminar">Tourist Info</button>
+                <button class="quick-btn" data-query="How to pay my electricity bill online?">Smart City</button>
+                <button class="quick-btn" data-query="Suggest ways to reduce plastic use">Environment</button>
+            </div>
+            <form class="message-form" id="message-form">
+                <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+                <button type="button" id="mic-btn" class="icon-btn">
+                    <svg xmlns="http://www.w.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 14a2 2 0 0 0 2-2V6a2 2 0 0 0-4 0v6a2 2 0 0 0 2 2z"/><path d="M12 17c-2.76 0-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V22h2v-3.08c3.39-.49 6-3.39 6-6.92h-2c0 2.76-2.24 5-5 5z"/></svg>
+                </button>
+                <button type="submit" id="send-btn" class="icon-btn">
+                    <svg xmlns="http://www.w.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                </button>
+            </form>
+            <p class="powered-by">Powered by HiBuddy Hackathon</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+### Send a chat message in Telugu
+POST http://127.0.0.1:5000/chat
+Content-Type: application/json
+
+{
+  "message": "హైదరాబాద్ బిర్యానీకి ఎందుకు ప్రసిద్ధి చెందింది?",
+  "language": "te"
+}
+
+### Send a chat message in English
+POST http://127.0.0.1:5000/chat
+Content-Type: application/json
+
+{
+  "message": "What are the timings for Golconda Fort?",
+  "language": "en"
+}
